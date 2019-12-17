@@ -1,0 +1,577 @@
+Started GET "/" for ::1 at 2019-11-13 15:29:30 -0800
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jharrel/.rvm/gems/ruby-2.6.1/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jharrel/.rvm/gems/ruby-2.6.1/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.9ms | Allocations: 482)
+Completed 200 OK in 21ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 2644)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-11-13 15:29:31 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-11-13 15:29:35 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jharrel/.rvm/gems/ruby-2.6.1/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jharrel/.rvm/gems/ruby-2.6.1/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.2ms | Allocations: 192)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 739)
+
+
+Started GET "/dog" for ::1 at 2019-11-13 15:29:40 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/dog"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/users" for ::1 at 2019-11-13 15:29:50 -0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (8.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (2.0ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.6ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.6ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.4ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.6ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.5ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.3ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.3ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 8]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.3ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.2ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 10]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.2ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 11]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.2ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 12]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.3ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.5ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 14]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.4ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 15]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.4ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.3ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.3ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 18]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 201 Created in 152ms (Views: 85.2ms | ActiveRecord: 56.6ms | Allocations: 35594)
+
+
+Started GET "/api/worlds" for ::1 at 2019-11-13 15:30:04 -0800
+Processing by WorldsController#index as */*
+  [1m[36mWorld Load (0.5ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds"[0m
+  ↳ app/controllers/worlds_controller.rb:8:in `index'
+  [1m[36mUser Load (20.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/worlds_controller.rb:8:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/worlds_controller.rb:8:in `index'
+Completed 200 OK in 28ms (Views: 5.9ms | ActiveRecord: 21.5ms | Allocations: 3293)
+
+
+Started DELETE "/api/worlds/18" for ::1 at 2019-11-13 15:30:08 -0800
+Processing by WorldsController#destroy as */*
+  Parameters: {"id"=>"18"}
+  [1m[36mWorld Load (10.6ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/worlds_controller.rb:48:in `set_world'
+  [1m[36mCACHE World Load (0.0ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/worlds_controller.rb:39:in `destroy'
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/worlds_controller.rb:40:in `destroy'
+  [1m[36mWorld Destroy (7.4ms)[0m  [1m[31mDELETE FROM "worlds" WHERE "worlds"."id" = $1[0m  [["id", 18]]
+  ↳ app/controllers/worlds_controller.rb:40:in `destroy'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/worlds_controller.rb:40:in `destroy'
+Completed 204 No Content in 26ms (ActiveRecord: 20.1ms | Allocations: 2964)
+
+
+Started DELETE "/api/worlds/17" for ::1 at 2019-11-13 15:30:09 -0800
+Processing by WorldsController#destroy as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mWorld Load (0.9ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/worlds_controller.rb:48:in `set_world'
+  [1m[36mCACHE World Load (0.0ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/worlds_controller.rb:39:in `destroy'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/worlds_controller.rb:40:in `destroy'
+  [1m[36mWorld Destroy (0.5ms)[0m  [1m[31mDELETE FROM "worlds" WHERE "worlds"."id" = $1[0m  [["id", 17]]
+  ↳ app/controllers/worlds_controller.rb:40:in `destroy'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/worlds_controller.rb:40:in `destroy'
+Completed 204 No Content in 7ms (ActiveRecord: 2.4ms | Allocations: 2649)
+
+
+Started POST "/api/worlds" for ::1 at 2019-11-13 15:30:16 -0800
+Processing by WorldsController#create as JSON
+  Parameters: {"world"=>{"planet"=>"asdfsadfa", "content"=>"asdfsdf"}, "user"=>{"name"=>"fasf", "ship"=>"asdf"}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 AND "users"."ship" = $2 LIMIT $3[0m  [["name", "fasf"], ["ship", "asdf"], ["LIMIT", 1]]
+  ↳ app/controllers/worlds_controller.rb:18:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/worlds_controller.rb:18:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "fasf"], ["LIMIT", 1]]
+  ↳ app/controllers/worlds_controller.rb:18:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."ship" = $1 LIMIT $2[0m  [["ship", "asdf"], ["LIMIT", 1]]
+  ↳ app/controllers/worlds_controller.rb:18:in `create'
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/worlds_controller.rb:18:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/worlds_controller.rb:21:in `create'
+  [1m[36mWorld Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "worlds" WHERE "worlds"."planet" = $1 LIMIT $2[0m  [["planet", "asdfsadfa"], ["LIMIT", 1]]
+  ↳ app/controllers/worlds_controller.rb:21:in `create'
+  [1m[36mWorld Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "worlds" WHERE "worlds"."content" = $1 LIMIT $2[0m  [["content", "asdfsdf"], ["LIMIT", 1]]
+  ↳ app/controllers/worlds_controller.rb:21:in `create'
+  [1m[36mCACHE World Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "worlds" WHERE "worlds"."planet" = $1 LIMIT $2[0m  [["planet", "asdfsadfa"], ["LIMIT", 1]]
+  ↳ app/controllers/worlds_controller.rb:21:in `create'
+  [1m[36mCACHE World Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "worlds" WHERE "worlds"."content" = $1 LIMIT $2[0m  [["content", "asdfsdf"], ["LIMIT", 1]]
+  ↳ app/controllers/worlds_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "fasf"], ["LIMIT", 1]]
+  ↳ app/controllers/worlds_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."ship" = $1 LIMIT $2[0m  [["ship", "asdf"], ["LIMIT", 1]]
+  ↳ app/controllers/worlds_controller.rb:21:in `create'
+  [1m[36mWorld Create (8.9ms)[0m  [1m[32mINSERT INTO "worlds" ("planet", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["planet", "asdfsadfa"], ["content", "asdfsdf"], ["created_at", "2019-11-13 23:30:16.388652"], ["updated_at", "2019-11-13 23:30:16.388652"]]
+  ↳ app/controllers/worlds_controller.rb:21:in `create'
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/worlds_controller.rb:21:in `create'
+Completed 500 Internal Server Error in 74ms (ActiveRecord: 14.1ms | Allocations: 17888)
+
+
+  
+ActiveRecord::NotNullViolation (PG::NotNullViolation: ERROR:  null value in column "user_id" violates not-null constraint
+DETAIL:  Failing row contains (19, asdfsadfa, asdfsdf, null, 2019-11-13 23:30:16.388652, 2019-11-13 23:30:16.388652).
+):
+  
+app/controllers/worlds_controller.rb:21:in `create'
+Started GET "/api/worlds" for ::1 at 2019-11-13 15:30:32 -0800
+Processing by WorldsController#index as */*
+  [1m[36mWorld Load (0.3ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds"[0m
+  ↳ app/controllers/worlds_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms | Allocations: 785)
+
+
+Started POST "/api/worlds" for ::1 at 2019-11-13 15:30:39 -0800
+Processing by WorldsController#create as JSON
+  Parameters: {"world"=>{"planet"=>"aaaa", "content"=>"4rw"}, "user"=>{"name"=>"ffff", "ship"=>"ssss"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 AND "users"."ship" = $2 LIMIT $3[0m  [["name", "ffff"], ["ship", "ssss"], ["LIMIT", 1]]
+  ↳ app/controllers/worlds_controller.rb:18:in `create'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/worlds_controller.rb:18:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "ffff"], ["LIMIT", 1]]
+  ↳ app/controllers/worlds_controller.rb:18:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."ship" = $1 LIMIT $2[0m  [["ship", "ssss"], ["LIMIT", 1]]
+  ↳ app/controllers/worlds_controller.rb:18:in `create'
+  [1m[36mUser Create (3.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "ship", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "ffff"], ["ship", "ssss"], ["created_at", "2019-11-13 23:30:39.947857"], ["updated_at", "2019-11-13 23:30:39.947857"]]
+  ↳ app/controllers/worlds_controller.rb:18:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/worlds_controller.rb:18:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/worlds_controller.rb:21:in `create'
+  [1m[36mWorld Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "worlds" WHERE "worlds"."planet" = $1 LIMIT $2[0m  [["planet", "aaaa"], ["LIMIT", 1]]
+  ↳ app/controllers/worlds_controller.rb:21:in `create'
+  [1m[36mWorld Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "worlds" WHERE "worlds"."content" = $1 LIMIT $2[0m  [["content", "4rw"], ["LIMIT", 1]]
+  ↳ app/controllers/worlds_controller.rb:21:in `create'
+  [1m[36mWorld Create (5.8ms)[0m  [1m[32mINSERT INTO "worlds" ("planet", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["planet", "aaaa"], ["content", "4rw"], ["user_id", 19], ["created_at", "2019-11-13 23:30:39.959495"], ["updated_at", "2019-11-13 23:30:39.959495"]]
+  ↳ app/controllers/worlds_controller.rb:21:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/worlds_controller.rb:21:in `create'
+Completed 201 Created in 28ms (Views: 0.9ms | ActiveRecord: 12.1ms | Allocations: 9728)
+
+
+Started POST "/api/worlds" for ::1 at 2019-11-13 15:30:54 -0800
+Processing by WorldsController#create as JSON
+  Parameters: {"world"=>{"planet"=>"9798778", "content"=>"4rwlkasdjf;lkjsadl;fkjsal;df"}, "user"=>{"name"=>"Bobby", "ship"=>"Hello"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 AND "users"."ship" = $2 LIMIT $3[0m  [["name", "Bobby"], ["ship", "Hello"], ["LIMIT", 1]]
+  ↳ app/controllers/worlds_controller.rb:18:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/worlds_controller.rb:18:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "Bobby"], ["LIMIT", 1]]
+  ↳ app/controllers/worlds_controller.rb:18:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."ship" = $1 LIMIT $2[0m  [["ship", "Hello"], ["LIMIT", 1]]
+  ↳ app/controllers/worlds_controller.rb:18:in `create'
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "ship", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Bobby"], ["ship", "Hello"], ["created_at", "2019-11-13 23:30:54.876123"], ["updated_at", "2019-11-13 23:30:54.876123"]]
+  ↳ app/controllers/worlds_controller.rb:18:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/worlds_controller.rb:18:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/worlds_controller.rb:21:in `create'
+  [1m[36mWorld Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "worlds" WHERE "worlds"."planet" = $1 LIMIT $2[0m  [["planet", "9798778"], ["LIMIT", 1]]
+  ↳ app/controllers/worlds_controller.rb:21:in `create'
+  [1m[36mWorld Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "worlds" WHERE "worlds"."content" = $1 LIMIT $2[0m  [["content", "4rwlkasdjf;lkjsadl;fkjsal;df"], ["LIMIT", 1]]
+  ↳ app/controllers/worlds_controller.rb:21:in `create'
+  [1m[36mWorld Create (1.2ms)[0m  [1m[32mINSERT INTO "worlds" ("planet", "content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["planet", "9798778"], ["content", "4rwlkasdjf;lkjsadl;fkjsal;df"], ["user_id", 20], ["created_at", "2019-11-13 23:30:54.885469"], ["updated_at", "2019-11-13 23:30:54.885469"]]
+  ↳ app/controllers/worlds_controller.rb:21:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/worlds_controller.rb:21:in `create'
+Completed 201 Created in 21ms (Views: 0.6ms | ActiveRecord: 5.5ms | Allocations: 9604)
+
+
+Started GET "/" for ::1 at 2019-12-03 16:37:52 -0800
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jharrel/.rvm/gems/ruby-2.6.1/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jharrel/.rvm/gems/ruby-2.6.1/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.7ms | Allocations: 317)
+Completed 200 OK in 13ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 1605)
+
+
+Started GET "/jf" for ::1 at 2019-12-03 16:38:00 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/jf"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/users" for ::1 at 2019-12-03 16:38:07 -0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (9.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (8.3ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.6ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.4ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.5ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (1.6ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.5ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.3ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.3ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 8]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (1.0ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.4ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 10]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.5ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 11]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.3ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 12]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.4ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.7ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 14]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.4ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 15]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.2ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.3ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.3ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 18]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.4ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 19]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.4ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 20]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 201 Created in 166ms (Views: 90.7ms | ActiveRecord: 63.3ms | Allocations: 33348)
+
+
+Started GET "/api/worlds" for ::1 at 2019-12-03 16:38:30 -0800
+Processing by WorldsController#index as */*
+  [1m[36mWorld Load (0.3ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds"[0m
+  ↳ app/controllers/worlds_controller.rb:8:in `index'
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/worlds_controller.rb:8:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/worlds_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 2.1ms | Allocations: 3314)
+
+
+Started GET "/" for ::1 at 2019-12-07 15:07:01 -0800
+  [1m[35m (7.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jharrel/.rvm/gems/ruby-2.6.1/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jharrel/.rvm/gems/ruby-2.6.1/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.5ms | Allocations: 317)
+Completed 200 OK in 15ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 1605)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-12-07 15:07:02 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-12-13 21:06:34 -0800
+  [1m[35m (6.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jharrel/.rvm/gems/ruby-2.6.1/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jharrel/.rvm/gems/ruby-2.6.1/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.8ms | Allocations: 317)
+Completed 200 OK in 14ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 1605)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-12-13 21:06:35 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/j" for ::1 at 2019-12-13 21:06:40 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/j"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/users" for ::1 at 2019-12-13 21:06:45 -0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (8.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (3.0ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.4ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.3ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.3ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.8ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.5ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.3ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.6ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 8]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.3ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.2ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 10]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.2ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 11]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.2ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 12]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.3ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (1.0ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 14]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.3ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 15]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.3ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.2ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.3ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 18]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.3ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 19]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.3ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 20]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 201 Created in 146ms (Views: 95.5ms | ActiveRecord: 41.9ms | Allocations: 33386)
+
+
+Started GET "/" for ::1 at 2019-12-17 00:21:12 -0800
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jharrel/.rvm/gems/ruby-2.6.1/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jharrel/.rvm/gems/ruby-2.6.1/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.2ms | Allocations: 317)
+Completed 200 OK in 14ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 1605)
+
+
+Started GET "/j" for ::1 at 2019-12-17 00:21:17 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/j"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/users" for ::1 at 2019-12-17 00:21:22 -0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (7.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (2.7ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.3ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.2ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.3ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.6ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.3ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.2ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.1ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 8]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.1ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 9]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.2ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 10]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.1ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 11]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.1ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 12]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.1ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 13]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.1ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 14]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.1ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 15]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.1ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 16]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.1ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 17]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.1ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 18]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.2ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 19]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[36mWorld Load (0.2ms)[0m  [1m[34mSELECT "worlds".* FROM "worlds" WHERE "worlds"."user_id" = $1[0m  [["user_id", 20]]
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 201 Created in 110ms (Views: 47.3ms | ActiveRecord: 53.2ms | Allocations: 33475)
+
+
