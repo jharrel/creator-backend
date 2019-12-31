@@ -7,7 +7,7 @@
 
  Rails.application.config.middleware.insert_before 0, Rack::Cors do
    allow do
-     origins 'starwars-character.netlify.com/'
+     origins 'creator-backend-api.herokuapp.com/api/users'
 
      resource '*',
        headers: :any,
@@ -15,7 +15,7 @@
    end
 
     allow do
-      origins '*.creator-backend.herokuapp.com/api/users'
+      origins '*.starwars-character.netlify.com/'
       # Allows frontend app to communicate with rails backend
 
   resource '*',
