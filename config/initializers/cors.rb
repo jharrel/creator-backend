@@ -15,7 +15,7 @@
   #  end
 
     allow do
-      origins 'starwars-character.netlify.com/'
+      origins 'https://starwars-character.netlify.com/'
       # Allows frontend app to communicate with rails backend
 
   resource '*',
